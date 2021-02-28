@@ -8,8 +8,8 @@ on:
       - '!README*.md'
 
 jobs:
-  publish-blog-site: 
-    name: publish blog site
+  publish-docs-site: 
+    name: publish docs site
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout Code
