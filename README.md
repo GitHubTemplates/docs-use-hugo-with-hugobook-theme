@@ -1,23 +1,20 @@
-# Github 仓库模板
+# 使用Hugo的hugo-book主题构建文档站点
 
 [![Github Actions][github-action-image]][github-repo-url]
 [![license][license-image]](LICENSE)
 [![Github Star][github-repo-star-image]][github-repo-url]
 [![standard-readme compliant][standard-readme-image]](standard-readme-url)
-[![ViewCount](http://hits.dwyl.com/GitHubTemplates/github-repository-template.svg)][github-repo-url]
 
 [背景](#背景) | [介绍](#介绍) | [使用](#使用) | [示例](#示例) | [相关仓库](#相关仓库) | [维护者](#维护者) | [如何贡献](#如何贡献) | [协议](#协议) | [English](README.en-US.md)
 
 ## 背景
 
-您可以生成具有与现有仓库相同的目录结构和文件的新仓库。如果有什么想法，欢迎来[讨论](https://github.com/GithubTemplate/github-repository-template/discussions)。
-
-[GitHub 说明地址](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
+使用Hugo自动构建文档站点，使用[hugo-book](https://github.com/alex-shpak/hugo-book)主题。
 
 ## 介绍
 
 ```
-github-repository-template
+docs-use-hugo-with-hugobook-theme
 ├── .github
 │   ├── COMMIT_CONVENTION.md
 │   ├── ISSUE_TEMPLATE
@@ -87,12 +84,12 @@ github-repository-template
 
 ## 使用
 
-点击[![使用这个模板][use-this-template]][generate]按钮，一键生成标准GitHub仓库。
+点击[![使用这个模板][use-this-template]][generate]按钮，复制到你自己的GitHub仓库中。
 
 或者使用`gh`命令行创建项目
 
 ```
-gh repo create myRepository -p GithubTemplate/github-repository-template
+gh repo create myRepository -p GitHubTemplates/docs-use-hugo-with-hugobook-theme
 ```
 
 ## 示例
@@ -101,8 +98,8 @@ gh repo create myRepository -p GithubTemplate/github-repository-template
 
 ## 相关仓库
 
-- [standard-readme](https://github.com/RichardLitt/standard-readme) — 一个标准README样式建议的仓库。
-- [Angular.js](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md) — Angular.js仓库贡献的编写规范
+- [Hugo](https://github.com/gohugoio/hugo)
+- [hugo-book](https://github.com/alex-shpak/hugo-book)
 
 ## 维护者
 
@@ -110,21 +107,21 @@ gh repo create myRepository -p GithubTemplate/github-repository-template
 
 ## 如何贡献
 
-非常欢迎你的加入！[提一个 Issue](https://github.com/GithubTemplate/github-repository-template/issues/new) 或者提交一个 Pull Request。
+非常欢迎你的加入！[提一个 Issue](https://github.com/GitHubTemplates/docs-use-hugo-with-hugobook-theme/issues/new) 或者提交一个 Pull Request。
 
-Github-Repository-Template 遵循 [Contributing](CONTRIBUTING.md) 编写规范。
+docs-use-hugo-with-hugobook-theme 遵循 [Contributing](CONTRIBUTING.md) 编写规范。
 
-Github-Repository-Template 遵循 [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) 行为规范。
+docs-use-hugo-with-hugobook-theme 遵循 [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) 行为规范。
 
 ## 协议
 
 [MIT © Bruce Maa.](LICENSE)
 
-[github-action-image]: https://github.com/GithubTemplate/github-repository-template/workflows/GithubRepositoryTemplate/badge.svg
-[github-repo-url]: https://github.com/GithubTemplate/github-repository-template
+[github-action-image]: https://github.com/GitHubTemplates/docs-use-hugo-with-hugobook-theme/actions/workflows/main.yml/badge.svg
+[github-repo-url]: https://github.com/GitHubTemplates/docs-use-hugo-with-hugobook-theme/actions/workflows/main.yml
 [license-image]: https://img.shields.io/badge/license-MIT-green.svg
-[github-repo-star-image]: https://img.shields.io/github/stars/GithubTemplate/github-repository-template.svg?style=social
+[github-repo-star-image]: https://img.shields.io/github/stars/GitHubTemplates/docs-use-hugo-with-hugobook-theme.svg?style=social
 [use-this-template]: https://img.shields.io/badge/-use%20this%20template-brightgreen.svg
-[generate]: https://github.com/GithubTemplate/github-repository-template/generate
+[generate]: https://github.com/GitHubTemplates/docs-use-hugo-with-hugobook-theme/generate
 [standard-readme-image]: https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square
 [standard-readme-url]: https://github.com/RichardLitt/standard-readme

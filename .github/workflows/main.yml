@@ -1,44 +1,41 @@
-name: GithubRepositoryTemplate
+name: 'Hugo Publish'
 
 on:
   push:
-    branches: 
-      - master
-    paths:
-      - '!**.md'
-  pull_request:
-    branches: 
-      - master
-    paths:
-      - '!**.md'
+    branches:    
+      - main
 
 jobs:
-  build:
-    name: Build
-    strategy:
-      matrix:
-        runs-on: [ubuntu-latest, macOS-latest, windows-latest]
-      fail-fast: true
+  publish-blog-site: 
+    name: publish blog site
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: remove docs
+        run: |
+          if [ -d "docs" ]; then
+            rm -rf docs
+          fi
+      - name: setup
+        id: vars
+        run: echo "::set-output name=commit_msg::$(git log -1 --pretty=%B)"
+      - name: hugo mod get
+        uses: jakejarvis/hugo-build-action@v0.80.0
+        with:
+          args: mod get -u
+      - name: hugo build
+        uses: jakejarvis/hugo-build-action@v0.80.0
+        with:
+          args: --gc --minify --cleanDestinationDir -d docs
+      - name: publish blog
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          if [ "`git status -s`" ]
+          then
+            git add -A
+            git commit -am "Auto publish: ${{ steps.vars.outputs.commit_msg }} with $GITHUB_WORKFLOW on $GITHUB_RUN_NUMBER"
+          fi  
+          git push
 
-    runs-on: ${{ matrix.runs-on }}
-
-    steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-        echo GITHUB_WORKFLOW: $GITHUB_WORKFLOW
-        echo GITHUB_RUN_ID: $GITHUB_RUN_ID
-        echo GITHUB_RUN_NUMBER: $GITHUB_RUN_NUMBER
-        echo GITHUB_ACTION $GITHUB_ACTION
-        echo GITHUB_ACTOR $GITHUB_ACTOR
-        echo GITHUB_REPOSITORY $GITHUB_REPOSITORY
-        echo GITHUB_EVENT_NAME $GITHUB_EVENT_NAME
-        echo GITHUB_REF $GITHUB_REF
-    - name: Hello world
-      uses: actions/hello-world-javascript-action@v1
-      with:
-        who-to-greet: 'Github Repository Template'
