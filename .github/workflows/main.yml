@@ -30,7 +30,7 @@ jobs:
         uses: jakejarvis/hugo-build-action@v0.80.0
         with:
           args: --gc --minify --cleanDestinationDir -d docs
-      - name: publish blog
+      - name: publish docs
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"

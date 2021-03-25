@@ -109,8 +109,3 @@ enableGitInfo = true
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
   BookTranslatedOnly = false
-
-# 添加hugo-book主题
-[module]
-  [[module.imports]]
-    path = "github.com/alex-shpak/hugo-book"

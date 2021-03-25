@@ -9,7 +9,7 @@
 
 ## 背景
 
-使用[Hugo][hugo-website]自动构建文档站点，使用[hugo-book][hugo-book-theme]主题。
+使用[Hugo][hugo-website]自动构建文档站点，使用[hugo-book][hugo-book-theme]主题v8版本。
 
 ## 介绍
 
