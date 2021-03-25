@@ -14,7 +14,7 @@
 ## 介绍
 
 [Hugo][hugo-website]是一个快速建站工具，可以用于创建自己的[博客][my-blog]，使用[hugo-book][hugo-book-theme]主题，可以创建文档站点。
-本仓库是一个`Github Template`仓库，可以通过点击[template][use-this-template]快速干净的创建自己的文档站点仓库。
+本仓库是一个`Github Template`仓库，可以通过点击[template][generate]快速干净的创建自己的文档站点仓库。
 
 ### 详细介绍
 
