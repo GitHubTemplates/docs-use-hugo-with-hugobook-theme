@@ -5,32 +5,16 @@
 [![Github Star][github-repo-star-image]][github-repo-url]
 [![standard-readme compliant][standard-readme-image]](standard-readme-url)
 
-[背景](#背景) | [介绍](#介绍) | [使用](#使用) | [示例](#示例) | [相关仓库](#相关仓库) | [维护者](#维护者) | [如何贡献](#如何贡献) | [协议](#协议) | [English](README.en-US.md)
+[背景](#背景) | [介绍](#介绍) | [使用](#使用) | [示例](#示例) | [相关仓库](#相关仓库) | [维护者](#维护者) | [如何贡献](#如何贡献) | [协议](#协议) 
 
 ## 背景
 
-使用Hugo自动构建文档站点，使用[hugo-book](https://github.com/alex-shpak/hugo-book)主题。
+使用[Hugo][hugo-website]自动构建文档站点，使用[hugo-book][hugo-book-theme]主题。
 
 ## 介绍
 
-```
-docs-use-hugo-with-hugobook-theme
-├── .github
-│   ├── COMMIT_CONVENTION.md
-│   ├── ISSUE_TEMPLATE
-│   │   ├── bug_report.md
-│   │   ├── custom.md
-│   │   └── feature_request.md
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── workflows
-│       └── main.yml
-├── .gitignore
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-├── README.en-US.md
-```
+[Hugo][hugo-website]是一个快速建站工具，可以用于创建自己的[博客][my-blog]，使用[hugo-book][hugo-book-theme]主题，可以创建文档站点。
+本仓库是一个`Github Template`仓库，可以通过点击[template][use-this-template]快速干净的创建自己的文档站点仓库。
 
 ### 详细介绍
 
@@ -125,3 +109,6 @@ docs-use-hugo-with-hugobook-theme 遵循 [Contributor Covenant](http://contribut
 [generate]: https://github.com/GitHubTemplates/docs-use-hugo-with-hugobook-theme/generate
 [standard-readme-image]: https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square
 [standard-readme-url]: https://github.com/RichardLitt/standard-readme
+[hugo-website]: https://gohugo.io
+[hugo-book-theme]: https://github.com/alex-shpak/hugo-book
+[my-blog]: https://brucemaa.cn
