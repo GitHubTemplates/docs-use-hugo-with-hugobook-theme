@@ -4,6 +4,9 @@ baseURL = 'https://githubtemplates.github.io/docs-use-hugo-with-hugobook-theme/'
 title = 'Hugo Book'
 theme = 'hugo-book'
 
+# 默认语言
+defaultContentLanguage = 'en'
+
 # Book configuration
 disablePathToLower = true
 enableGitInfo = true
