@@ -9,9 +9,9 @@ on:
     inputs:
       name:
         # Friendly description to be shown in the UI instead of 'name'
-        description: 'Person to greet'
+        description: 'Who are you?'
         # Default value if no value is explicitly provided
-        default: 'World'
+        default: 'BruceMaa'
         # Input has to be provided for the workflow to run
         required: true
 
