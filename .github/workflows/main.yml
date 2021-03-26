@@ -1,6 +1,9 @@
 name: 'Hugo Publish'
 
 on: 
+  push:
+    branches:
+      - master
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
